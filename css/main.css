@@ -584,3 +584,49 @@ footer .info span {
 
 
 /* end footer */
+
+
+/* back to top */
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #007bff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    animation: showOnScroll linear;
+    animation-timeline: scroll();
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}
+
+@keyframes showOnScroll {
+
+    0%,
+    10% {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    20%,
+    100% {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+/* end back to top */
