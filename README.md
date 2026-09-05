@@ -1,2 +1,2 @@
 # elzero-template-one
-elzero course templates
+## elzero course templates
